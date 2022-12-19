@@ -1,0 +1,350 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 15vh;
+    background-color: #5D4954;
+}
+
+.debut{
+    color: rgb(254, 254, 254);
+    letter-spacing: 1px;
+}
+
+.nav-links{
+    display:flex;
+    justify-content: space-around;
+    width: 35%;
+}
+
+.nav-links a{
+    color: rgb(224, 224, 224);
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 15px; 
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+} 
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: rgb(254, 254, 254);
+    margin: 5px;
+    transition: all 0.5s ease-in;
+}
+
+header h2 span{
+    font-weight: normal;
+    font-size: 15px;
+}
+
+header h2 {
+    display : inline-block ;
+    margin-left : 20px;
+} 
+
+header{
+    text-align : center ;
+} 
+
+section{
+    margin-top: 50px;
+}
+
+section div p {
+    margin-left: 10%;
+} 
+
+section h3{
+    margin-left: 10%; 
+}
+
+section div h1{
+    font-size: 250%;
+    margin-left : 10%;
+}
+
+.cont{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contain{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contain .se{
+    background-color :darkgoldenrod ;
+    width : 120px ;
+    height: 120px;
+    border-radius: 50%;  
+    display: flex;
+    justify-content: space-between;
+    margin-left: 110px;
+}
+
+.contain .se span{
+    padding-top: 40%;
+    padding-left: 17%;
+    font-size:1.2em; 
+    font-weight: bold; 
+} 
+
+#b{
+    background-color :goldenrod;
+}
+
+#b:hover{
+    cursor:pointer;
+    background-color: white;
+}
+
+#c{
+    background-color :gold;
+}
+
+#c:hover{
+    cursor:pointer;
+    background-color: white;
+}
+
+.contain .se:hover{
+    cursor:pointer;
+    background-color: white;
+}
+
+img{
+    float: right;
+    border-radius:50%;
+}
+
+footer{
+    margin:30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer div span{
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer div{
+    text-align: center;
+}
+
+#second{
+    display: none;
+}
+
+@media all and (min-width: 1370px){
+    body{
+        width: 100%;
+    }
+    section{
+        margin-left: -5%;
+    }
+    footer{
+        margin-top: 7%;
+    } 
+    .prempart{
+        display: flex;
+        /* justify-content: space-between; */
+    }
+
+    img{
+        margin-top: 10%;
+    }
+    .princ{
+        margin-right: 80px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .nav-links{
+        display:flex;
+        justify-content: space-around;
+        width: 55%;
+    }
+    section{
+        width:100%;
+    }
+    .cont{
+        display: grid;
+    }
+    .contain1{
+        text-align: center;
+    }
+    img{
+        margin-left: -10%;
+        background-color:red;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 768px){
+
+    header{
+        text-align: left;
+    }
+
+    header div h2{
+        font-size: 0.99em;
+    }
+
+    header h2 {
+        display : inline-block ;
+        margin-left : 10px;
+    } 
+
+    header div span{
+        font-size: 0.75em;
+    }
+
+    .debut{
+        width : 15px ;
+        height: 15px;
+        border-radius: 50%;
+        background-color: rgb(32, 32, 30);
+        margin-left: -265px;
+        margin-top:-20px;
+    } 
+
+    /* .nav-links{
+        display: none;
+    } */
+    section{
+        margin-top: 35px;
+    }
+
+    section div p {
+        margin-left: 10%;
+    } 
+
+    section h3{
+        margin-left: 10%; 
+    }
+
+    section div h1{
+        font-size: 190%;
+        margin-left : 10%;
+    }
+
+    .contain{
+        display: grid;
+    }
+    .se{
+        background-color :darkgoldenrod ;
+        width : 90px ;
+        height: 90px;
+        border-radius: 50%;  
+        display: flex;
+        justify-content: space-between;
+        margin-left: -30px;
+        margin-bottom: 20px;
+    }
+
+    .se span{
+        padding-top: 40%;
+        padding-left: 15%;
+        font-size:1em; 
+        font-weight: bold; 
+    } 
+
+    img{
+        float: right;
+        border-radius:50%;
+        margin-left: 95px;
+        margin-top: -250px;
+        width: 145px;
+        height: 145px;
+    }
+
+    footer{
+        display: grid;
+        margin:0px;
+        margin-bottom: 10px;
+    }
+
+    .prempart{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+
+    .recs{
+        font-size: 0.8em;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height:150%;
+        top:15vh;
+        background-color: #5D4954;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        z-index: 5px;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in; 
+    }
+
+    .burger{
+        margin-left: 140%;
+        display: block;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+.move .lgn1{
+    transform: rotate(-45deg) /*translate(-5px, 6px)*/;
+}
+
+
+.move .lgn2{
+    opacity: 0;
+}
+
+
+.move .lgn3{
+    transform: rotate(45deg) ;/*translate(-5px, -6px); */
+}
+/* @keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform:translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+} */
