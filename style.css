@@ -223,30 +223,21 @@ footer div{
         background-color :darkgoldenrod ;
         width : 125px ;
         height: 125px;
-        /* border-radius: 50%;   */
-        /* display: flex;
-        justify-content: space-between; */
         margin-left: 2%;
     }
     footer{
         margin: 10% 0 0 0;
     }
+    
+    .nav-links{
+        display:flex;
+        justify-content: space-around;
+        width: 55%;
+    }
 }
 
-/* @media screen and (min-width: 770px){
-    .contain{
-        margin: 0 0 0 -5%; 
-    }
-    .contain1{
-        margin: 20px 0 10px 0;
-    }
-} */
 
 @media (min-width: 350px) and (max-width: 635px){
-
-    /* header{
-        text-align: left;
-    } */
 
     header div h2{
         font-size: 0.99em;
@@ -269,9 +260,6 @@ footer div{
         margin: -20px 0 0 -5%;
     } 
 
-    /* .nav-links{
-        display: none;
-    } */
     section{
         margin-top: 35px;
     }
@@ -409,19 +397,33 @@ footer div{
 
     .se{
         background-color :darkgoldenrod ;
-        width : 30px ;
-        height: 30px;
         border-radius: 50%;  
         display: flex;
         justify-content: space-between;
-        margin-left: -100px;
-        margin-bottom: 10px;
+        margin: 0 0 -100px -10px;
     }
 
-    .se span{
-        padding-top: 40%;
-        padding-left: 15%;
-        font-size:0.35em; 
+    #a, #b, #c{
+        width: 90px;
+        height: 90px;
+        margin: 0 0 -100px 70px;
+    }
+
+    #b span{
+        padding: 40% 0 0 15%;
+        font-size:0.85em; 
+        font-weight: bold; 
+    } 
+
+    #a span{
+        padding: 40% 0 0 15%;
+        font-size:0.85em; 
+        font-weight: bold; 
+    } 
+
+    #c span{
+        padding: 40% 0 0 15%;
+        font-size:0.85em; 
         font-weight: bold; 
     } 
 
@@ -435,21 +437,29 @@ footer div{
 
     footer{
         display: grid;
-        margin:50px 0 10px 70px;
+        margin:100px 0 10px 70px;
     }
 
     .prempart{
-        display: flex;
-        justify-content: space-around;
-        margin:0 0 20px 0;
+        display: grid;
+        /* justify-content: space-around; */
+        margin:0 0 10px 0;
     }
 
     .princ{
-        margin: 0 80px 0 0;
+        margin: 0 20px 20px -40px;
     }
 
     .recs{
         font-size: 0.8em;
+    }
+
+    .der{
+        margin: 0 20px 0px -40px;
+    }
+
+    .debut span{
+        display: none;
     }
 
     body{
